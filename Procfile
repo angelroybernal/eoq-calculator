@@ -1,0 +1,1 @@
+web: streamlit run eoq_calculator.py --server.port $PORT
