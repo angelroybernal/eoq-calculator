@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Prepare: Python') {
             steps {
-                sh 'python3 -m venv .venv'
+                sh 'python3.7 -m venv .venv'
                 sh './.venv/bin/python -m pip install -r requirements.txt'
                 sh './.venv/bin/python -m pip install pylint'
             }
