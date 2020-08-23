@@ -1,0 +1,4 @@
+**.venv**
+*.pylintrc
+*Procfile
+*Jenkinsfile
