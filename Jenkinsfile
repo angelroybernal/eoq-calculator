@@ -26,7 +26,7 @@ pipeline {
             }
             steps {
                 sh 'heroku git:remote -a powerful-ocean-42757'
-                sh 'git push heroku main'
+                sh 'git push heroku HEAD:master'
             }
         }
     }
