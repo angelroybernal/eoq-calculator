@@ -20,5 +20,14 @@ pipeline {
                 sh './.venv/bin/python eoq_calculator_tests.py -v'
             }
         }
+        stage('Deploy: To Heroku') {
+            when {
+                branch 'master'
+            }
+            steps {
+                sh 'heroku git:remote -a powerful-ocean-42757'
+                sh 'git push heroku main'
+            }
+        }
     }
 }
