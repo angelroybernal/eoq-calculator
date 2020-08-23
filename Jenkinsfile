@@ -26,8 +26,6 @@ pipeline {
             }
             steps {
                 sh 'heroku git:remote -a powerful-ocean-42757'
-                sh 'git add .'
-                sh "git commit -m 'Build: ${BUILD_NUMBER}'"
                 sh 'git push heroku master'
             }
         }
