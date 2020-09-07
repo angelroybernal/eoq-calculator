@@ -1,15 +1,15 @@
 language: python
 python:
-    - "3.7"
+- '3.7'
 install:
-    - pip install -r requirements.txt
-    - pip install pylint
+- pip install -r requirements.txt
+- pip install pylint
 script:
-    - pylint eoq_calculator.py
-    - python eoq_calculator_tests.py -v
+- pylint eoq_calculator.py
+- python eoq_calculator_tests.py -v
 deploy:
-    provider: heroku
-    api_key: test
-    app: powerful-ocean-42757
-    on: master
-
+  provider: heroku
+  api_key:
+    secure: lUcfXLk3fJbzUKuv5p+wV7679jlgbdbivtNkKEkkIurRNEy/qtqUX4o/1/fAayMs7G+iIVGdSe8BmrkyMNS/fitgaOGFFIuX6XLe96wEXDsOtX1ltAyECUySJP65XD/s1ChqzkEYCe3taVQMSLnRQiHHPNeksT2cVovaJSBJkhcs1gd9swGfubhBkCflittWvbDPRUzC3O9dQHu/NbDzj6lQAXxRGSg0jd+RShjqVpBQ4QpBWbdwY2L3W3HpruDnOz5GUYZ36R4TEhnsi3trDnbOB8kTzTcueyEquv17q7jxbEpHDXl1xslx67KCfwWcwNBN9M3NiURAK1XHucoPwBcxG/wQmgYX4Qum3QWZekG4u7hD+3Ugu0hDj8TOT9JLKGQjswHAYyq2nR4pFUhh9Ki9DM1WYZLB6qzhveuBAWEzcDbJYWh+qyWsYFVrCfyfxZf+b8aWvxMkztCCQ9J8PgrkD6DhJzsDs2sa+umqrujkVzZCbKT761QRWWBzacObfwOvN4m4LVDhcJDDBmXAlMAfdYdtHtU3r4SkGDxM/NFD/x+AjHqz5MN8a+INz+aQkvzdELoQBmFmhtfiDdmpJYTU5pVUvpXy8rEUvegiOhgJXdD9YSwMDamRy+kgrLBWbZf33SYIWMVS/E1DVZYk2MLPgQQjrNZG6RHRmm4DYsI=
+  app: powerful-ocean-42757
+  on: master
