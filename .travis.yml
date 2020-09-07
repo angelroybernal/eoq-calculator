@@ -7,4 +7,9 @@ install:
 script:
     - pylint eoq_calculator.py
     - python eoq_calculator_tests.py -v
+deploy:
+    provider: heroku
+    api_key: test
+    app: powerful-ocean-42757
+    on: master
 
