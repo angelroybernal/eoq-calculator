@@ -6,4 +6,5 @@ install:
     - pip install pylint
 script:
     - pylint eoq_calculator.py
-    - eoq_calculator_tests.py -v
+    - python eoq_calculator_tests.py -v
+
