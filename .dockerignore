@@ -4,3 +4,5 @@
 *Procfile
 *Jenkinsfile
 *runtime.txt
+**.travis.yml**
+**.git**
